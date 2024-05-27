@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/codigo.js" defer></script>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: #f4faff;           
+            
+        }
+        header{                      
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #ddecf8;
+            height: 60px;
+            width: 100%;
+            padding-top: 50px;   
+             
+        }
+        h1{
+            text-align: center;  
+            margin: 0px;
+            line-height: 5px;
+            color: rgb(3, 3, 105);
+            
+       }
+       h4{
+        text-align: center;           
+        color: #696977;
+       }
+              
+        .box{           
+           margin: auto;
+           height: 200px;
+           width: 400px;
+           text-align: center;  
+           display: flex;               
+           justify-content: center;
+           align-items: center;
+            
+        }
+        input, button, option{
+            text-align: center;
+            margin: 10px;
+            padding: 6px;
+            font-size: 15px;
+            border-radius: 5px;
+           
+        }
+        
+        #resp {
+            margin-top: 20px;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            color: #696977;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conversor de temperatura</h1>
+        <h4> Celsius em Fahrenheit e Kelvin </h4>
+    </header>
+    <div class="box">
+        
+        <input type="number" placeholder="celsius" id="celsius">  
+        <select id="operador">
+            <option value="f">fahrenheit</option>
+            <option value="k">Kelvin</option>
+        </select>    
+
+        <input type="submit" value="converter" onclick="converter()">  
+             
+    </div>
+
+    <div id = "resp"></div>   
+    
+</body>
+</html>
